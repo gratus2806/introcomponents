@@ -13,7 +13,7 @@ class Layout_1 extends React.Component{
       this.state={
         widthSquare :window.outerWidth ,
         heightSquare :window.outerWidth,
-        rectangleHeigt : '460px'
+        rectangleHeigt : '555px'   
       }
     }
     // if(window.outerWidth<1200){
@@ -34,6 +34,7 @@ class Layout_1 extends React.Component{
                <div className='container-fluid'>
                 <div className='row'>
                     <div className='image-circle-small'>
+                    <i className="image-circle-small-button fa fa-image fa-2x "></i>
                     </div>
                   </div>
                   <div className='row'>
@@ -44,6 +45,7 @@ class Layout_1 extends React.Component{
                   
                   <div className='row'>
                       <div className='image-circle-medium'>
+                      <i className="image-circle-medium-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -53,6 +55,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                     <div className='image-circle-large'>
+                    <i className="image-circle-large-button fa fa-image fa-2x "></i>
                     </div>
                   </div>
                   <div className='row'>
@@ -62,7 +65,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-circle-extraLarge' >
-                        
+                      <i className="image-circle-extraLarge-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -72,7 +75,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-square-small'>
-                        
+                      <i className="image-square-small-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -82,7 +85,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-square-medium'>
-                      
+                      <i className="image-square-medium-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -92,7 +95,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-square-large'>
-                        
+                      <i className="image-square-large-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -102,7 +105,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-square-extraLarge'>
-                        
+                      <i className="image-square-extraLarge-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -112,6 +115,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-square-fullScreen'  style={{width:widthSquare,height:heightSquare}}  >
+                      <i className="image-square-fullScreen-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
@@ -122,7 +126,7 @@ class Layout_1 extends React.Component{
                   <div className='row'>
                     <div className='col-sm-12 col-style'>
                       <div className='image-softCorner-small'>
-                      
+                      <i className="image-softCorner-small-button fa fa-image fa-2x "></i>
                       </div>
                     </div>
                   </div>
@@ -136,7 +140,7 @@ class Layout_1 extends React.Component{
                   <div className='row'>
                     <div className='col-sm-12 col-style'>
                       <div className='image-softCorner-medium'>
-                      
+                      <i className="image-softCorner-medium-button fa fa-image fa-2x "></i>
                       </div>
                     </div>
                   </div>
@@ -150,7 +154,7 @@ class Layout_1 extends React.Component{
                   <div className='row'>
                     <div className='col-sm-12 col-style'>
                       <div className='image-softCorner-large'>
-                        
+                      <i className="image-softCorner-large-button fa fa-image fa-2x "></i>
                       </div>
                     </div>
                   </div>
@@ -164,7 +168,7 @@ class Layout_1 extends React.Component{
                   <div className='row'>
                     <div className='col-sm-12 col-style'>
                       <div className='image-softCorner-extraLarge' >
-                        
+                      <i className="image-softCorner-extraLarge-button fa fa-image fa-2x "></i>
                       </div>
                     </div>
                   </div>
@@ -177,6 +181,7 @@ class Layout_1 extends React.Component{
                   </div>
                   <div className='row'>
                       <div className='image-verticle-fullScreen' style={{height:height,width:width}} >
+                      <i className="image-verticle-fullScreen-button fa fa-image fa-2x "></i>
                       </div>
                   </div>
                   <div className='row'>
