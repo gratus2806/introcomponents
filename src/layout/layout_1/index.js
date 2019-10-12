@@ -1,63 +1,68 @@
 import React from 'react';
 
 import './style.css';
+import YouTube from 'react-youtube';
 import Carousel from 'react-bootstrap/Carousel';
 
 class Layout_1 extends React.Component{
   constructor(props){
     super(props)
       this.state={
+      isOpen: "none",
       width :window.outerWidth ,
       height :window.outerHeight
     }
     if(window.outerWidth>=1200){
       this.state={
+        isOpen: "none",
         widthSquare :window.outerWidth ,
         heightSquare :window.outerWidth,
-        rectangleHeigt : '555px'   
+        videowidth:window.innerWidth,
+        videoHeight:window.innerHeight,
+        rectangleHeigt : '555px'
+           
       }
     }
-    
-    
-    // if(window.outerWidth<1200){
-    //   this.state={
-    //     widthSquare :window.outerWidth ,
-    //     heightSquare :window.outerWidth
-    //   }
-    // }
   }
-  // showSlides=()=> {
-  //   console.log("n function")
-  //   var slideIndex = 0;
-  //   var i;
-  //   var slides = document.getElementsByClassName("mySlides");
-  //   var dots = document.getElementsByClassName("dot");
-  //   for (i = 0; i < slides.length; i++) {
-  //     slides[i].style.display = "none";  
-  //   }
-  //   slideIndex++;
-  //   if (slideIndex > slides.length) {slideIndex = 1}    
-  //   for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  //   }
-  //   // debugger;
-  //   slides[slideIndex-1].style.display = "block";  
-  //   dots[slideIndex-1].className += " active";
-  //   setTimeout(this.showSlides, 2000);
-  //    // Change image every 2 seconds
-  // }
+  openModal = (event) => {
+    this.setState({isOpen: "block" ,coverDiv:"none"});
+    this._target.playVideoAt();
+  };
+   
+  hideModal = (event) => {
+    console.log("in hide")
+    this.setState({isOpen: "none",coverDiv:"block"});
+    this._target.pauseVideo();
+  };
+  
+  videoOnReady(event) {
+    this._target = event.target;
+    
+  }
 
-  // componentDidMount(){
-  //   this.showSlides()
-  // }
 
   render(){
+    
+    let video_visiblity=this.state.isOpen
+    // let videoDiv=this.state.videoDiv
+    let coverDiv=this.state.coverDiv
+    console.log("visiblity",this.state.isOpen)
     // this.showSlides();//
+    let videowidth=this.state.videowidth;
+    let videoHeight=this.state.videoHeight;
     let height=this.state.height;
     let width= this.state.width;
     let widthSquare =this.state.widthSquare;
     let heightSquare= this.state.heightSquare;
     let rectangleHeigt= this.state.rectangleHeigt;
+    const opts = {
+      height: videoHeight,
+      width: "1300",
+      
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    }
       return(
           <div>
                <div className='container-fluid'>
@@ -405,84 +410,7 @@ class Layout_1 extends React.Component{
                   </div>
                 </div>
 
-   {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<image Carousal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>              */}
-                {/* <div className="row corusal-display">
-                  <main className="core">
-                        <article className="left">
-                          <Carousel >
-                            <Carousel.Item className="controll_trensation">
-                                <div className="carousel-image" style={{width:width ,textAlign:"center"}}>
-                                <i className="image-carousel-button fa fa-image fa-2x "></i>
-                                </div>
-                            </Carousel.Item> */}
-                            {/* <Carousel.Item className="controll_trensation">
-                                <div className="carousel-image">
-                                </div> 
-                            </Carousel.Item >
-                            <Carousel.Item className="controll_trensation">
-                                <div className="carousel-image">
-                                </div>
-                            </Carousel.Item> */}
-                          {/* </Carousel>
-                          </article>
-                        <article className="right"></article>
-                      </main>
-                  </div>
-                <div className="row"> */}
-                  {/* <div className="slideshow-container">
-
-                    <div className="mySlides fade">
-                      <div className="numbertext">1 / 3</div>
-                      <img src="https://i.imgur.com/ZerwVp3.jpg" style={{width:"100%"}} />
-                      <div className="text">Caption Text</div>
-                    </div>
-
-                    <div className="mySlides fade">
-                      <div className="numbertext">2 / 3</div>
-                      <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" style={{width:"100%"}} />
-                      <div className="text">Caption Two</div>
-                    </div>
-
-                    <div className="mySlides fade">
-                      <div className="numbertext">3 / 3</div>
-                      <img src="https://i.imgur.com/ZerwVp3.jpg" style={{width:"100%"}} />
-                      <div className="text">Caption Three</div>
-                    </div>
-
-                    </div>
-                    <br/>
-                    <br/>
-
-                    <div style={{textAlign:"center", display:"none"}}>
-                      <span className="dot"></span> 
-                      <span className="dot"></span> 
-                      <span className="dot"></span> 
-                    </div> */}
-
-                    {/* <main className="core">
-                      <article className="left">
-                        <Carousel >
-                          <Carousel.Item className="controll_trensation">
-                              <div className="carousel-image">
-                                  <img className="image-carousel-style " src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt=""  />
-                              </div>
-                          </Carousel.Item>
-                          <Carousel.Item className="controll_trensation">
-                              <div className="carousel-image">
-                                  <img className="image-carousel-style" src="https://cdn.pixabay.com/photo/2017/02/08/17/24/butterfly-2049567__340.jpg" alt=""  />
-                              </div> 
-                          </Carousel.Item >
-                          <Carousel.Item className="controll_trensation">
-                              <div className="carousel-image">
-                                  <img className="image-carousel-style" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt=""  />
-                              </div>
-                          </Carousel.Item>
-                        </Carousel>
-                        </article>
-                      <article className="right"></article>
-                    </main>
-                  </div> */}
-
+   
 
                   {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<video Circular galary>>>>>>>>>>>>>>>>>>>>>></video> */}
                   <div className="row">
@@ -669,6 +597,70 @@ class Layout_1 extends React.Component{
                     <button class="btn button-gradient-sharpEdge-style">Primary</button>
                   </div>
                 </div>
+
+                {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<videos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 */}
+                  <div className='row'>
+                      <div className='video-circle' >
+                        <i className="video-circle-button fa fa-play fa-2x "></i>
+                      </div>
+                  </div>
+                  <div className='row'>
+                      <div className='video-circle' style={{border:"none",boxShadow:"none"}}>
+                        <img className="video-circle-style" src='http://lorempixel.com/output/cats-q-c-640-480-1.jpg'/>
+                      </div>
+                  </div>
+
+
+                  <div className='row'>
+                      <div className='video-softCorner-rectangle' >
+                      <i className="video-softCorner-rectangle-button fa fa-play fa-2x "></i>
+                      </div>
+                  </div>
+                  <div className='row'>
+                      <div className='video-softCorner-rectangle' style={{border:"none",boxShadow:"none"}}>
+                        <img className="video-softCorner-rectangle-style" src='http://lorempixel.com/output/cats-q-c-640-480-1.jpg'/>
+                      </div>
+                  </div>
+
+                  {/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<completed video use this for video>>>>>>>>>>>>>>>>>>>>>></> */}
+                  <div className='row'>
+                      <div className='video-sharpEdges-rectangle' >
+                      <i className="video-sharpEdges-rectangle-button fa fa-play fa-2x "></i>
+                      </div>
+                  </div>
+                  <div className='row ' style={{position:"relative"}}>
+                    <div style={{position:"absolute",display:video_visiblity,right: "23px",top: "18px",zIndex:"99999"}}>
+                      <a style={{color:"white",fontWeight:"900",fontSize:"2em"}} onClick={this.hideModal.bind(this)}>X</a>
+                    </div>
+                    <div style={{display:video_visiblity,zIndex:"9999",width:videowidth,height:videoHeight,backgroundColor:"#000"}}>
+                      <YouTube
+                        videoId="JIOHSw0NIVI"
+                        opts={opts}
+                        onReady={this.videoOnReady.bind(this)}
+                      />
+                    </div>
+                    <div className='video-sharpEdges-rectangle' style={{position:"relative",display:coverDiv}} >
+                      <a onClick={this.openModal.bind(this)}>
+                      <i  className=" fa fa-play fa-2x " style={{color:"white",position:"absolute",left: "45%",top: "45%",zIndex:"999"}}></i>
+                      <img className="video-sharpEdges-rectangle-style" src='http://lorempixel.com/output/cats-q-c-640-480-1.jpg'/>
+                      </a>
+                    </div>
+                  </div>
+                  
+
+
+
+                  <div className="row">
+                    <div className="card-video">
+                      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="Avatar" style={{width:"100%"}}/>
+                      <div className="container">
+                        <h4><b>John Doe</b></h4> 
+                        <p>Architect & Engineer</p> 
+                      </div>
+                    </div>
+                  </div>
+
             </div>
           </div>
       )

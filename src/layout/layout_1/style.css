@@ -678,6 +678,7 @@
 .column-circle-video {
   float: left;
   width: 49.33%;
+  height: 44vw;
   padding: 2%;
   text-align: center;
   
@@ -700,6 +701,7 @@
 
   .column-circle-video {
     width: 42.33%;
+    height: 34vw;
   }
   .ul_videoStyle-circle{
       margin-left: 12%;
@@ -711,7 +713,6 @@
 }
 
 }
-
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<video soft corner>>>>>>>>>>>>>>>>>> */
 .video-softCorner-style{
@@ -956,4 +957,116 @@
   border-radius: 2px;
   margin-bottom: 5%;
   color:#ffff;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,,video>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.video-circle {
+  height: 330px;
+  width: 330px;
+  margin: 5% auto;
+  box-shadow: 2px 5px 10px 0px #e1ddd5;
+  border: solid 1px #e1ddd5;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.video-circle-button{
+  padding: 48%;
+  font-size: 1em;
+}
+.video-circle-style {
+  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (min-width: 1201px) {
+  .video-circle {
+    height: 370px;
+    width: 370px;
+  }
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<softcorner rec video>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.video-softCorner-rectangle {
+  height: 200px;
+  width: 320px;
+  margin: 5% auto;
+  box-shadow: 2px 5px 10px 0px #e1ddd5;
+  border: solid 1px #e1ddd5;
+  overflow: hidden;
+  border-radius: 50px;
+  text-align: center;
+}
+.video-softCorner-rectangle-button{
+  padding-top: 27%;
+  font-size: 1em;
+}
+.video-softCorner-rectangle-style {
+  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (min-width: 1201px) {
+  .video-softCorner-rectangle {
+    height: 250px;
+    width: 420px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<sharp edges>>>>>>>>>>>>>>>>>>>>>>video */
+.video-sharpEdges-rectangle {
+  height: 200px;
+  width: 320px;
+  margin: 5% auto;
+  box-shadow: 2px 5px 10px 0px #e1ddd5;
+  border: solid 1px #e1ddd5;
+  overflow: hidden;
+  text-align: center;
+}
+.video-sharpEdges-rectangle-button{
+  padding-top: 27%;
+  font-size: 1em;
+}
+.video-sharpEdges-rectangle-style {
+  
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.ytp-expand-pause-overlay .ytp-pause-overlay {
+  
+  display: none !important;
+}
+.ytp-pause-overlay {
+ 
+  display: none;
+}
+@media (min-width: 1201px) {
+  .video-sharpEdges-rectangle {
+    height: 250px;
+    width: 420px;
+  }
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,video with input>>>>>>>>>>>>>>>>>> */
+.card-video {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 75%;
+  margin:5% auto;
+}
+
+.card-video:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
 }
