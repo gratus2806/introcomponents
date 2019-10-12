@@ -2,6 +2,7 @@
     width: 100%;
     margin: 0 auto;
   }
+  /* <<<<<<<<<<<<<<<<<<<SMALL CIRCLE>>>>>>>>>>>>>>>>>>>>> */
 .image-circle-small {
     height: 82px;
     width: 82px;
@@ -17,6 +18,7 @@
     padding: 40%;
     font-size: 1em;
   }
+  
   .image-circle-small-style {
     
     width: 100%;
@@ -30,7 +32,7 @@
       width: 122px;
     }
   }
-
+/* <<<<<<<<<<<<<<<<<<<SMALL medium>>>>>>>>>>>>>>>>>>>>> */
   .image-circle-medium {
     height: 160px;
     width: 160px;
@@ -429,6 +431,14 @@
     box-shadow: 2px 2px 5px 0px #e1ddd5;
     border-radius: 50%;
 }
+.image-squareSharp-style{
+  width: 70%;
+    height: 30vw;
+    object-fit: cover;
+    border: solid 1px #e1ddd5;
+    box-shadow: 2px 2px 5px 0px #e1ddd5;
+    /* border-radius: 50%; */
+}
   .image-square-style{
     width: 76%;
     height: 30vw;
@@ -437,12 +447,22 @@
     box-shadow: 2px 2px 5px 0px #e1ddd5;
     border-radius: 25px;
 }
+
+
+
 .upload_image_style_circle{
   position: absolute;
     z-index: 1;
     width: 31px;
     top: 44%;
     left: 23%;
+}
+.upload_image_style_squareSharp{
+  position: absolute;
+  z-index: 1;
+  width: 31px;
+  top: 44%;
+  left: 23%;
 }
 .upload_image_style{
   position: absolute;
@@ -481,23 +501,30 @@
 @media (min-width: 1201px) {
     .image-square-style{
       width: 100%;
-    height: 30vw;
+    height: 32vw;
     object-fit: cover;
     border: solid 1px #e1ddd5;
     }
     .image-circle-style{
-      width: 70%;
-      height: 21vw;
+      width: 100%;
+      height: 32vw;
       object-fit: cover;
       border: solid 1px #e1ddd5;
       box-shadow: 2px 2px 5px 0px #e1ddd5;
       border-radius: 50%;
   }
+  .image-squareSharp-style{
+    width: 100%;
+    height: 32vw;
+    object-fit: cover;
+    border: solid 1px #e1ddd5;
+    box-shadow: 2px 2px 5px 0px #e1ddd5;
+}
     .column {
-        width: 39.33%;
+      width: 42.33%;
     }
     .ul_imageStyle{
-        margin-left: 9%;
+        margin-left: 12%;
     }
 }
 @media (min-width: 1200px) {
@@ -506,20 +533,427 @@
   }
 
 }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<one below other>>>>>>>>>>>>>>>>>>>>>> */
+.image-oneBelow-other{
+  border: solid 1px #000;
+}
 
-  /* .image-rectangle {
-    width: 320px;
-    height: 210px;
-    margin: 5% auto;
-    box-shadow: 2px 2px 5px 0px #e1ddd5;
-    border: solid 1px #e1ddd5;
-    overflow: hidden;
-    
+.column-image-oneBelow-other-style {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.image-oneBelow-other-style {
+  margin-top: 12px;
+}
+.image-oneBelow-other-button{
+  padding: 48%;
+    font-size: 1em;
+}
+.row-after:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.image-oneBelow-other-ul-style{
+  list-style-type: none;
+  padding-left: 0px;
+}
+@media (min-width: 411px) {
+  .image-oneBelow-other{
+    height: 375px;
+    width: 375px !important;
+    margin: 0 auto !important;
   }
-  .image-rectangle-style {
-   
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
+  .image-oneBelow-other-style {
+    height: 375px;
+    width: 375px !important;
     object-fit: cover;
-  } */
+  }
+ 
+}
+@media (min-width: 375px) {
+  .image-oneBelow-other{
+    height: 358px;
+    width: 358px !important;
+    margin: 0 auto !important;
+  }
+  .image-oneBelow-other-style {
+    height: 358px;
+    width: 358px !important;
+    object-fit: cover;
+  }
+ 
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<image Carousal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.carousel-image{
+  width: 100%;
+  height: 244px;
+  border: solid 1px #000;
+  margin-bottom: 5%;
+}
+.image-carousel-style {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-carousel-button{
+  padding-top: 30%;
+    font-size: 1em;
+}
+.controll_trensation{
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.carousel .carousel-indicators li {
+  width: 1.625rem;
+  height: 1.625rem;
+  margin-left: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (min-width : 1200px){
+  .carousel-image{
+    width: 100%;
+    height: 493px;
+  }
+  .image-carousel-style {
+    
+    object-fit: cover;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 231%;
+    overflow: hidden;
+  }
+  .carousel-control-next {
+    right: -758px;
+}
+.carousel-indicators {
+ 
+  left: 110%;
+}
+.corusal-display{
+  display: none;
+}
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Video circular galery>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.video-circle-style{
+  width: 70%;
+  height: 30vw;
+  object-fit: cover;
+  border: solid 1px #e1ddd5;
+  box-shadow: 2px 2px 5px 0px #e1ddd5;
+  border-radius: 50%;
+}
+.upload_video_style_circle{
+  position: absolute;
+    z-index: 1;
+    width: 31px;
+    top: 44%;
+    left: 23%;
+}
+
+.ul_videoStyle-circle{
+  list-style-type: none;
+  padding-left: 3%;
+  padding-top: 6%;
+  
+}
+.ul_videoStyle-circle-empty{
+  list-style-type: none;
+  padding-left: 3%;
+  padding-top: 6%;
+  
+}
+.column-circle-video {
+  float: left;
+  width: 49.33%;
+  padding: 2%;
+  text-align: center;
+  
+}
+.videoRow-circle::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (min-width: 1201px) {
+  
+  .video-circle-style{
+    width: 100%;
+    height: 32vw;
+    object-fit: cover;
+    border: solid 1px #e1ddd5;
+    box-shadow: 2px 2px 5px 0px #e1ddd5;
+    border-radius: 50%;
+}
+
+  .column-circle-video {
+    width: 42.33%;
+  }
+  .ul_videoStyle-circle{
+      margin-left: 12%;
+  }
+}
+@media (min-width: 1200px) {
+.ul_videoStyle-circle-empty{
+  display: none;
+}
+
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<video soft corner>>>>>>>>>>>>>>>>>> */
+.video-softCorner-style{
+  width: 70%;
+  height: 30vw;
+  object-fit: cover;
+  border: solid 1px #e1ddd5;
+  box-shadow: 2px 2px 5px 0px #e1ddd5;
+  border-radius: 25%;
+}
+.upload_video_style_softCorner{
+  position: absolute;
+    z-index: 1;
+    width: 31px;
+    top: 44%;
+    left: 23%;
+}
+
+.ul_videoStyle-softCorner{
+  list-style-type: none;
+  padding-left: 3%;
+  padding-top: 6%;
+  
+}
+.ul_videoStyle-softCorner-empty{
+  list-style-type: none;
+  padding-left: 3%;
+  padding-top: 6%;
+  
+}
+.column-softCorner-video {
+  float: left;
+  width: 49.33%;
+  padding: 2%;
+  text-align: center;
+  
+}
+.videoRow-softCorner::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (min-width: 1201px) {
+  
+  .video-softCorner-style{
+    width: 100%;
+    height: 32vw;
+    object-fit: cover;
+    border: solid 1px #e1ddd5;
+    box-shadow: 2px 2px 5px 0px #e1ddd5;
+    border-radius: 15%;
+}
+
+  .column-softCorner-video {
+    width: 42.33%;
+  }
+  .ul_videoStyle-softCorner{
+      margin-left: 12%;
+  }
+}
+@media (min-width: 1200px) {
+.ul_videoStyle-softCorner-empty{
+  display: none;
+}
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<sharp edge video>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.video-sharpEdge-style{
+  width: 70%;
+  height: 30vw;
+  object-fit: cover;
+  border: solid 1px #e1ddd5;
+  box-shadow: 2px 2px 5px 0px #e1ddd5;
+  /* border-radius: 25%; */
+}
+.upload_video_style_sharpEdge{
+  position: absolute;
+    z-index: 1;
+    width: 31px;
+    top: 44%;
+    left: 23%;
+}
+
+.ul_videoStyle-sharpEdge{
+  list-style-type: none;
+  padding-left: 3%;
+  padding-top: 6%;
+  
+}
+.ul_videoStyle-sharpEdge-empty{
+  list-style-type: none;
+  padding-left: 3%;
+  padding-top: 6%;
+  
+}
+.column-sharpEdge-video {
+  float: left;
+  width: 49.33%;
+  padding: 2%;
+  text-align: center;
+  
+}
+.videoRow-sharpEdge::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (min-width: 1201px) {
+  
+  .video-sharpEdge-style{
+    width: 100%;
+    height: 32vw;
+    object-fit: cover;
+    border: solid 1px #e1ddd5;
+    box-shadow: 2px 2px 5px 0px #e1ddd5;
+    /* border-radius: 15%; */
+}
+
+  .column-sharpEdge-video {
+    width: 42.33%;
+  }
+  .ul_videoStyle-sharpEdge{
+      margin-left: 12%;
+  }
+}
+@media (min-width: 1200px) {
+.ul_videoStyle-sharpEdge-empty{
+  display: none;
+}
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,one below othr video>>>>>>>>>>>>>>>>>> */
+.video-oneBelow-other{
+  border: solid 1px #000;
+}
+
+.column-video-oneBelow-other-style {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.video-oneBelow-other-style {
+  margin-top: 12px;
+}
+.video-oneBelow-other-button{
+  padding: 48%;
+    font-size: 1em;
+}
+.row-after:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.video-oneBelow-other-ul-style{
+  list-style-type: none;
+  padding-left: 0px;
+}
+@media (min-width: 411px) {
+  .video-oneBelow-other{
+    height: 375px;
+    width: 375px !important;
+    margin: 0 auto !important;
+  }
+  .video-oneBelow-other-style {
+    height: 375px;
+    width: 375px !important;
+    object-fit: cover;
+  }
+ 
+}
+@media (min-width: 375px) {
+  .video-oneBelow-other{
+    height: 358px;
+    width: 358px !important;
+    margin: 0 auto !important;
+  }
+  .video-oneBelow-other-style {
+    height: 358px;
+    width: 358px !important;
+    object-fit: cover;
+  }
+ 
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<,,button filll>>>>>>>>>>>>>>>>>>>/ */
+.align-button{
+  text-align: center;
+  margin: 0 auto;
+}
+.button-fill-sharp-style{
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 2px;
+  margin-bottom: 5%;
+}
+.button-fill-circle-style{
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 50px;
+  margin-bottom: 5%;
+}
+.button-fill-softEdge-style{
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<outlined button>>>>>>>>>>>>>>> */
+.button-outlined-sharpEdge-style{
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 2px;
+  margin-bottom: 5%;
+}
+.button-outlined-circle-style{
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 50px;
+  margin-bottom: 5%;
+}
+.button-outlined-softEdge-style{
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 15px;
+  margin-bottom: 5%;
+}
+.button-gradient-sharpEdge-style{
+  background: linear-gradient(40deg,#f31023,#7b1d92);
+  width: 333px;
+  height: 45px;
+  font-size: 1.4em;
+  border-radius: 2px;
+  margin-bottom: 5%;
+  color:#ffff;
+}
