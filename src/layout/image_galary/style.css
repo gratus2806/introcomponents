@@ -1,264 +1,215 @@
 .layout{
-  width: 100%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 2% 23%;
 }
-
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Video circular galery>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-.image-circle-style{
-width: 92%;
-height: 40.46vw;
-  object-fit: cover;
-  border: solid 1px #e1ddd5;
+.image-grid-circle {
+  float: left;
+  width: 30%;
+  height: 274px;
+  overflow: hidden;
   box-shadow: 2px 2px 5px 0px #e1ddd5;
+  border:solid 1px #000;
+  margin-right: 3%;
+  margin-bottom: 0.5em;
   border-radius: 50%;
-}
-.upload_image_style_circle{
-  position: absolute;
-  z-index: 1;
-  width: 27px;
-  top: 45%;
-  left: 24%;
-}
-
-.ul_imageStyle-circle{
-  list-style-type: none;
-  padding-left: 3%;
-  padding-top: 6%;
-  
-}
-.ul_imageStyle-circle-empty{
-  list-style-type: none;
-  padding-left: 3%;
-  padding-top: 6%;
-  
-}
-.column-circle-image {
-  float: left;
-  width: 49.33%;
-  height: 44vw;
-  padding: 2%;
   text-align: center;
+}
+
+.image-grid-circle-style{
   
-}
-.imageRow-circle::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media (min-width: 1201px) {
-  
-  .image-circle-style{
-    width: 86%;
-  height: 25.51vw;
-    object-fit: cover;
-    border: solid 1px #e1ddd5;
-    box-shadow: 2px 2px 5px 0px #e1ddd5;
-    border-radius: 50%;
-}
-
-  .column-circle-image {
-    width: 39.33%;
-    height: 25vw;
-  }
-  .ul_imageStyle-circle{
-      margin-left: 12%;
-  }
-}
-@media (min-width: 1200px) {
-.ul_imageStyle-circle-empty{
-  display: none;
-}
-
-}
-
-/* <<<<<<<<<<<<<<<<<<<<<<<<<image soft corner>>>>>>>>>>>>>>>>>> */
-.image-softCorner-style{
-  width: 92%;
-  height: 40.46vw;
-  object-fit: cover;
-  border: solid 1px #e1ddd5;
-  box-shadow: 2px 2px 5px 0px #e1ddd5;
-  border-radius: 24px;
-}
-.upload_image_style_softCorner{
-  position: absolute;
-    z-index: 1;
-    width: 31px;
-    top: 44%;
-    left: 23%;
-}
-
-.ul_imageStyle-softCorner{
-  list-style-type: none;
-  padding-left: 3%;
-  padding-top: 6%;
-  
-}
-.ul_imageStyle-softCorner-empty{
-  list-style-type: none;
-  padding-left: 3%;
-  padding-top: 6%;
-  
-}
-.column-softCorner-image {
-  float: left;
-  width: 49.33%;
-  padding: 2%;
-  text-align: center;
-  
-}
-.imageRow-softCorner::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media (min-width: 1201px) {
-  
-  .image-softCorner-style{
-    width: 86%;
-  height: 25.51vw;
-    object-fit: cover;
-    border: solid 1px #e1ddd5;
-    box-shadow: 2px 2px 5px 0px #e1ddd5;
-    border-radius: 30px;
-}
-
-  .column-softCorner-image {
-    width: 39.33%;
-    height: 25vw;
-  }
-  .ul_imageStyle-softCorner{
-      margin-left: 12%;
-  }
-}
-@media (min-width: 1200px) {
-.ul_imageStyle-softCorner-empty{
-  display: none;
-}
-
-}
-
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<sharp edge image>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.image-sharpEdge-style{
-  width: 92%;
-  height: 40.46vw;
-  object-fit: cover;
-  border: solid 1px #e1ddd5;
-  box-shadow: 2px 2px 5px 0px #e1ddd5;
-  border-radius: 3px
-}
-.upload_image_style_sharpEdge{
-  position: absolute;
-    z-index: 1;
-    width: 31px;
-    top: 44%;
-    left: 23%;
-}
-
-.ul_imageStyle-sharpEdge{
-  list-style-type: none;
-  padding-left: 3%;
-  padding-top: 6%;
-  
-}
-.ul_imageStyle-sharpEdge-empty{
-  list-style-type: none;
-  padding-left: 3%;
-  padding-top: 6%;
-  
-}
-.column-sharpEdge-image {
-  float: left;
-  width: 49.33%;
-  padding: 2%;
-  text-align: center;
-  
-}
-.imageRow-sharpEdge::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media (min-width: 1201px) {
-  .row_style{
-    margin-bottom: 69px;
-  }
-  .image-sharpEdge-style{
-    width: 86%;
-  height: 25.51vw;
-    object-fit: cover;
-    border: solid 1px #e1ddd5;
-    box-shadow: 2px 2px 5px 0px #e1ddd5;
-    /* border-radius: 15%; */
-}
-
-  .column-sharpEdge-image {
-    width: 39.33%;
-    height: 25vw;
-  }
-  .ul_imageStyle-sharpEdge{
-      margin-left: 12%;
-  }
-}
-@media (min-width: 1200px) {
-.ul_imageStyle-sharpEdge-empty{
-  display: none;
-}
-
-}
-
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,one below othr image>>>>>>>>>>>>>>>>>> */
-.image-oneBelow-other{
-  border: solid 1px #000;
-}
-
-.column-image-oneBelow-other-style {
-  float: left;
   width: 100%;
-  padding: 10px;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.upload_video_style_circle{
+  width: 25%;
+  padding-top: 34%;
+  
+}
+@media (min-width:320px) and (max-width:414px){
+  .layout{
+      margin: 1% 12%;
+  }
+  .image-grid-circle {
+      float: left;
+      width: 47%;
+      height: 31.5vw;
+      overflow: hidden;
+      box-shadow: 2px 2px 5px 0px #e1ddd5;
+      margin-right: 3%;
+      margin-bottom: 0.5em;
+      border-radius: 50%;
+  }
+}
+@media (min-width:768px) and (max-width:1199px){
+  .layout{
+      margin: 2% 16%;
+  }
+  .image-grid-circle {
+      float: left;
+      width: 45%;
+      height: 30.001vw;
+      overflow: hidden;
+      box-shadow: 2px 2px 5px 0px #e1ddd5;
+      margin-right: 3%;
+      margin-bottom: 0.5em;
+      border-radius: 50%;
+  }
+}
+
+/* <<<<<<grid soft corner image>>>>>>>>>>>>>>>>>> */
+
+.image-grid-softCorner {
+  float: left;
+  width: 30%;
+  height: 274px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 0px #e1ddd5;
+  border:solid 1px #000;
+  margin-right: 3%;
+  margin-bottom: 0.5em;
+  border-radius: 24px;
   text-align: center;
+}
+.image-grid-softCorner-style{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.upload_video_style_softCorner{
+  width: 25%;
+  padding-top: 34%;
+  
+}
+@media (min-width:320px) and (max-width:414px){
+  .layout{
+      width: 70%;
+      margin: 1% 12%;
+  }
+  .image-grid-softCorner {
+     
+      width: 47%;
+      height: 31.5vw;
+      
+  }
+}
+@media (min-width:768px) and (max-width:1199px){
+  .layout{
+      
+      margin: 2% 16%;
+  }
+  .image-grid-softCorner {
+     
+      width: 45%;
+      height: 30.001vw;
+      
+  }
+}
+
+
+/* <<<<<<grid sharp corner image>>>>>>>>>>>>>>>>>> */
+
+.image-grid-sharpCorner {
+  float: left;
+  width: 30%;
+  height: 274px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 0px #e1ddd5;
+  border:solid 1px #000;
+  margin-right: 3%;
+  margin-bottom: 0.5em;
   border-radius: 3px;
+  text-align: center;
 }
-/* .image-oneBelow-other-style {
-  margin-top: 12px;
-} */
-.image-oneBelow-other-button{
-  padding: 48%;
-    font-size: 1em;
+.image-grid-sharpCorner-style{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
-.row-after:after{
-  content: "";
-  display: table;
-  clear: both;
+.upload_video_style_sharpCorner{
+  width: 25%;
+  padding-top: 34%;
+  
 }
-.image-oneBelow-other-ul-style{
-  list-style-type: none;
-  padding-left: 0px;
-}
-@media (min-width: 411px) {
-  .image-oneBelow-other{
-    height: 375px;
-    width: 375px !important;
-    margin: 0 auto !important;
+@media (min-width:320px) and (max-width:414px){
+  .layout{
+      width: 70%;
+      margin: 1% 12%;
   }
-  .image-oneBelow-other-style {
-    height: 375px;
-    width: 375px !important;
-    object-fit: cover;
+  .image-grid-sharpCorner {
+     
+      width: 47%;
+      height: 31.5vw;
+      
   }
- 
 }
-@media (min-width: 375px) {
-  .image-oneBelow-other{
-    height: 257px;
-    width: 477px !important;
-    object-fit: cover;
+@media (min-width:768px) and (max-width:1199px){
+  .layout{
+      
+      margin: 2% 16%;
   }
-  .image-oneBelow-other-style {
-    height: 257px;
-    width: 477px !important;
-    object-fit: cover;
+  .image-grid-sharpCorner {
+     
+      width: 45%;
+      height: 30.001vw;
+      
   }
- 
+}
+
+/* <<<<<<one below other image>>>>>>>>>>>>>>>>>> */
+
+.image-grid-one-below-other {
+  
+  width: 30%;
+  height: 274px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 0px #e1ddd5;
+  border:solid 1px #000;
+  /* margin-right: 3%;
+  margin-bottom: 0.5em; */
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 17%;
+}
+.image-grid-one-below-other-style{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.upload_video_style_one-below-other{
+  width: 25%;
+  padding-top: 34%;
+  
+}
+@media (min-width:320px) and (max-width:414px){
+  .layout{
+      width: 70%;
+      margin: 1% 12%;
+
+  }
+  .image-grid-one-below-other {
+     
+      width: 75%;
+      height: 50.5vw;
+      margin: 0 auto;
+  }
+}
+@media (min-width:768px) and (max-width:1199px){
+  .layout{
+      
+      margin: 2% 16%;
+  }
+  .image-grid-one-below-other {
+     
+      width: 45%;
+      height: 30.001vw;
+      margin: 0 auto;
+  }
 }
