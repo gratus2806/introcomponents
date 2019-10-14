@@ -10,24 +10,24 @@ import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
 const Layout_1    = AsyncComponent(() => {
     return import('./layout/layout_1');
 });
-// const Layout_2    = AsyncComponent(() => {
-//     return import('./layout/layout_2');
-// });
-// const Layout_3    = AsyncComponent(() => {
-//     return import('./layout/layout_3');
-// });
-// const Layout_4    = AsyncComponent(() => {
-//     return import('./layout/layout_4');
-// });
-// const Layout_5    = AsyncComponent(() => {
-//     return import('./layout/layout_5');
-// });
-// const Layout_6    = AsyncComponent(() => {
-//     return import('./layout/layout_6');
-// });
-// const Layout_6_1    = AsyncComponent(() => {
-//     return import('./layout/layout_6_1');
-// });
+const Images    = AsyncComponent(() => {
+    return import('./layout/images');
+});
+const Videos    = AsyncComponent(() => {
+    return import('./layout/video');
+});
+const Image_galary    = AsyncComponent(() => {
+    return import('./layout/image_galary');
+});
+const Video_gallery   = AsyncComponent(() => {
+    return import('./layout/video_galary');
+});
+const Buttons    = AsyncComponent(() => {
+    return import('./layout/buttons');
+});
+const Video_modal    = AsyncComponent(() => {
+    return import('./layout/video_modal');
+});
 
 // const Layout_7    = AsyncComponent(() => {
 //     return import('./layout/layout_7');
@@ -118,7 +118,13 @@ const Layout_1    = AsyncComponent(() => {
 ReactDOM.render(<Router >  
     <Switch>
         {/* <Route path="" component={Layout_5} /> */}
-        <Route path="" component={Layout_1} />
+        <Route path="/layout_1" component={Layout_1} />
+        <Route path="/images" component={Images} />
+        <Route path="/image_galary" component={Image_galary} />
+        <Route path="/videos" component={Videos} />
+        <Route path="/video_galary" component={Video_gallery} />
+        <Route path="/buttons" component={Buttons} />
+        <Route path="/video_modal" component={Video_modal} />
         
     </Switch>
  </Router>, document.getElementById('root'));

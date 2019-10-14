@@ -1,0 +1,105 @@
+.layout{
+    width: 100%;
+    margin: 0 auto;
+  }
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<,,button filll>>>>>>>>>>>>>>>>>>>/ */
+.align-button{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .button-fill-sharp-style{
+    width: 333px;
+    height: 45px;
+    font-size: 1.4em;
+    border-radius: 2px;
+    margin-bottom: 5%;
+  }
+  .button-fill-circle-style{
+    width: 333px;
+    height: 50px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    margin-bottom: 5%;
+  }
+  .button-fill-softEdge-style{
+    width: 333px;
+    height: 60px;
+    font-size: 1.4em;
+    border-radius: 15px;
+    margin-bottom: 5%;
+  }
+  
+  
+  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<outlined button>>>>>>>>>>>>>>> */
+  .button-outlined-sharpEdge-style{
+    width: 333px;
+    height: 45px;
+    font-size: 1.4em;
+    border-radius: 2px;
+    margin-bottom: 5%;
+  }
+  .button-outlined-circle-style{
+    width: 333px;
+    height: 50px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    margin-bottom: 5%;
+  }
+  .button-outlined-softEdge-style{
+    width: 333px;
+    height: 45px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    margin-bottom: 5%;
+  }
+  
+
+
+
+  .button-gradient-sharpEdge-style{
+    background: linear-gradient(40deg,#582327,#f15811) ;
+    width: 333px;
+    height: 45px;
+    font-size: 1.4em;
+    border-radius: 2px;
+    margin-bottom: 5%;
+    color:#ffff;
+  }
+  .button-gradient-circle-style{
+    background: linear-gradient(40deg,#f31023,#7b1d92) !important;
+    width: 333px;
+    height: 50px;
+    font-size: 1.4em;
+    border-radius:50px;
+    margin-bottom: 5%;
+    color:#ffff;
+  }
+  .button-gradient-softEdge-style{
+    background: linear-gradient(40deg,#23f310,#e0ec30) !important;
+    width: 333px;
+    height: 60px;
+    font-size: 1.4em;
+    border-radius:10px;
+    margin-bottom: 5%;
+    color:#ffff;
+  }
+  .btn:focus, .btn:hover {
+    color:#ffff;
+    text-decoration: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 5px auto transparent;
+  outline-offset: -2px;
+}
+
+.button-link-style{
+  
+  width: 333px;
+  height: 60px;
+  font-size: 1.4em;
+  border-radius:10px;
+  margin-bottom: 5%;
+  color:#ffff;
+}
+
+  
