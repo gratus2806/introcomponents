@@ -124,7 +124,7 @@ class Images extends React.Component{
                   </div>
 
 
-                  <div className='row'>
+                  {/* <div className='row'>
                       <div className='image-square-fullScreen'  style={{width:widthSquare,height:heightSquare}}  >
                       <i className="image-square-fullScreen-button fa fa-image fa-2x "></i>
                       </div>
@@ -133,7 +133,7 @@ class Images extends React.Component{
                       <div className='image-square-fullScreen' style={{border:"none",boxShadow:"none",width:widthSquare,height:heightSquare}}>
                         <img className="image-square-fullScreen-style" src='http://lorempixel.com/output/cats-q-c-640-480-1.jpg'/>
                       </div>
-                  </div>
+                  </div> */}
 
 
                   <div className='row'>

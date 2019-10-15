@@ -29,9 +29,9 @@ const Video_modal    = AsyncComponent(() => {
     return import('./layout/video_modal');
 });
 
-// const Layout_7    = AsyncComponent(() => {
-//     return import('./layout/layout_7');
-// });
+const Login    = AsyncComponent(() => {
+    return import('./layout/login');
+});
 // const Layout_7_1    = AsyncComponent(() => {
 //     return import('./layout/layout_7_1');
 // });
@@ -125,6 +125,7 @@ ReactDOM.render(<Router >
         <Route path="/video_galary" component={Video_gallery} />
         <Route path="/buttons" component={Buttons} />
         <Route path="/video_modal" component={Video_modal} />
+        <Route path="/login" component={Login} />
         
     </Switch>
  </Router>, document.getElementById('root'));

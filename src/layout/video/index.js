@@ -170,12 +170,12 @@ class Video extends React.Component{
 
 
                   <div className="row">
-                    <div className="card-video">
-                      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt="Avatar" style={{width:"100%"}}/>
-                     
-                        <h4 style={{padding: "2%"}}><b>John Doe</b></h4> 
-                        
-                     
+                    <div className="card-video" style={{position:"relative"}}>
+                      <a className=" video-btn"  data-toggle="modal" data-src="https://www.youtube.com/embed/lTxn2BuqyzU" data-target="#myModal" >
+                        <i  className=" fa fa-play fa-2x " style={{color:"white",position:"absolute",left: "45%",top: "33%",zIndex:"999"}}></i>
+                        <img className="video-card-style" src='http://lorempixel.com/output/cats-q-c-640-480-1.jpg' style={{width:"100%"}}/>
+                        <h4 style={{padding: "2%"}}><b>John Doe</b></h4>
+                      </a>
                     </div>
                   </div>
 

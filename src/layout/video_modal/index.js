@@ -8,144 +8,65 @@ class Video_modal extends React.Component{
     constructor(props){
         super(props)
           this.state={}
-          if(window.outerWidth>=1200){
-            this.state={
-                visiblity:"none"
-            }
-          } else{
-            this.state={
-                visiblity:"block"
-            } 
-          }
-
+         
     }
 
     render(){
-      let visiblity = this.state.visiblity;  
+     
     
   
     return(
-        <div className="layout">
-            <div className="row" style={{display:visiblity}}>
-                <ul style={{listStyleType:"none"}}>
-                    <li>
-                        <div className="image-grid-circle">
-                            <img className="upload_video_style_circle" src="https://dezov.s3.amazonaws.com/media/upload-icon-png427-4f1f-8b21-dedb5c507065.png" alt="Smiley face" />
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-circle">
-                        </div>
-                    </li>
-                </ul>
+        <div class="container">
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          {/* <!-- Indicators --> */}
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          {/* <!-- Wrapper for slides --> */}
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Los Angeles" style={{width:"100%"}} />
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
             </div>
-            <div className="row">
-                <ul style={{listStyleType:"none"}}>
-                    <li>
-                        <div className="image-grid-circle">
-                            <img className="image-grid-circle-style" src="https://res.cloudinary.com/fleetnation-static/image/asset/s--MifwX3dl--/f_auto/header-2018-2560w-c2f0f28235c4f87790c9d5181036c003" ></img>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-circle">
-                            <img className="image-grid-circle-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img>
-                        </div>
-                    </li>
-                </ul>
+      
+            <div class="item">
+              <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="Chicago" style={{width:"100%"}}/>
+              <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+              </div>
             </div>
-            <div className="row" style={{display:visiblity}}>
-                <ul style={{listStyleType:"none"}}>
-                    
-                    <li>
-                        <div className="image-grid-softCorner">
-                        <img className="upload_video_style_softCorner" src="https://dezov.s3.amazonaws.com/media/upload-icon-png427-4f1f-8b21-dedb5c507065.png" alt="Smiley face" />
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-softCorner">
-                            {/* <img className="image-grid-softCorner-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img> */}
-                        </div>
-                    </li>
-                </ul>
+          
+            <div class="item">
+              <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="New York" style={{width:"100%"}}/>
+              <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+              </div>
             </div>
-            <div className="row">
-                <ul style={{listStyleType:"none"}}>
-                    
-                    <li>
-                        <div className="image-grid-softCorner">
-                            <img className="image-grid-softCorner-style" src="https://res.cloudinary.com/fleetnation-static/image/asset/s--MifwX3dl--/f_auto/header-2018-2560w-c2f0f28235c4f87790c9d5181036c003" ></img>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-softCorner">
-                            <img className="image-grid-softCorner-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div className="row" style={{display:visiblity}}>
-                <ul style={{listStyleType:"none"}}>
-                    <li>
-                        <div className="image-grid-sharpCorner">
-                        <img className="upload_video_style_sharpCorner" src="https://dezov.s3.amazonaws.com/media/upload-icon-png427-4f1f-8b21-dedb5c507065.png" alt="Smiley face" />
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-sharpCorner">
-                            {/* //<img className="image-grid-sharpCorner-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img> */}
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div className="row">
-                <ul style={{listStyleType:"none"}}>
-                    <li>
-                        <div className="image-grid-sharpCorner">
-                            <img className="image-grid-sharpCorner-style" src="https://res.cloudinary.com/fleetnation-static/image/asset/s--MifwX3dl--/f_auto/header-2018-2560w-c2f0f28235c4f87790c9d5181036c003" ></img>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-sharpCorner">
-                            <img className="image-grid-sharpCorner-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div className="row" style={{display:visiblity}}>
-                <ul style={{listStyleType:"none" }}>
-                    <li>
-                        <div className="image-grid-one-below-other">
-                        <img className="upload_video_style_one-below-other" src="https://dezov.s3.amazonaws.com/media/upload-icon-png427-4f1f-8b21-dedb5c507065.png" alt="Smiley face" />
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-one-below-other">
-                            {/* //<img className="image-grid-one-below-other-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img> */}
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div className="row">
-                <ul style={{listStyleType:"none" ,padding:"0p"}}>
-                    <li>
-                        <div className="image-grid-one-below-other">
-                            <img className="image-grid-one-below-other-style" src="https://res.cloudinary.com/fleetnation-static/image/asset/s--MifwX3dl--/f_auto/header-2018-2560w-c2f0f28235c4f87790c9d5181036c003" ></img>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="image-grid-one-below-other">
-                            <img className="image-grid-one-below-other-style" src="https://img.freepik.com/free-photo/image-human-brain_99433-298.jpg?size=626&ext=jpg" ></img>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            
-            
+        
+          </div>
+      
+          {/* <!-- Left and right controls --> */}
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
+      </div>
+      
      
      )
  }

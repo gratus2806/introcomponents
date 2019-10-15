@@ -1,11 +1,14 @@
 .layout{
   width: 70%;
-  margin: 2% 23%;
+  margin: 0 auto;
+}
+.col-style{
+  margin: 0 auto;
 }
 .video-grid-circle {
   float: left;
-  width: 30%;
-  height: 274px;
+  width: 45%;
+  height: 260px;
   overflow: hidden;
   box-shadow: 2px 2px 5px 0px #e1ddd5;
   border:solid 1px #e1ddd5;
@@ -31,10 +34,13 @@
   .layout{
       margin: 1% 12%;
   }
+  .col-style{
+    padding:0px;
+  }
   .video-grid-circle {
       float: left;
       width: 47%;
-      height: 31.5vw;
+      height: 31.66vw;
       overflow: hidden;
       box-shadow: 2px 2px 5px 0px #e1ddd5;
       margin-right: 3%;
@@ -62,14 +68,14 @@
 
 .video-grid-softCorner {
   float: left;
-  width: 30%;
-  height: 274px;
+  width: 45%;
+  height: 260px;
   overflow: hidden;
   box-shadow: 2px 2px 5px 0px #e1ddd5;
   border:solid 1px #e1ddd5;
   margin-right: 3%;
   margin-bottom: 0.5em;
-  border-radius: 24px;
+  border-radius: 16px;
   text-align: center;
 }
 .video-grid-softCorner-style{
@@ -89,10 +95,13 @@
       width: 70%;
       margin: 1% 12%;
   }
+  .col-style{
+    padding:0px;
+  }
   .video-grid-softCorner {
      
       width: 47%;
-      height: 31.5vw;
+      height: 31.66vw;
       
   }
 }
@@ -114,8 +123,8 @@
 
 .video-grid-sharpCorner {
   float: left;
-  width: 30%;
-  height: 274px;
+  width: 45%;
+  height: 260px;
   overflow: hidden;
   box-shadow: 2px 2px 5px 0px #e1ddd5;
   border:solid 1px #e1ddd5;
@@ -141,10 +150,13 @@
       width: 70%;
       margin: 1% 12%;
   }
+  .col-style{
+    padding:0px;
+  }
   .video-grid-sharpCorner {
      
       width: 47%;
-      height: 31.5vw;
+      height: 31.66vw;
       
   }
 }
@@ -165,16 +177,14 @@
 
 .video-grid-one-below-other {
   
-  width: 30%;
+  width: 93%;
   height: 274px;
   overflow: hidden;
   box-shadow: 2px 2px 5px 0px #e1ddd5;
-  border:solid 1px #e1ddd5;
-  /* margin-right: 3%;
-  margin-bottom: 0.5em; */
+  border: solid 1px #e1ddd5;
   border-radius: 3px;
   text-align: center;
-  margin: 0 17%;
+  
 }
 .video-grid-one-below-other-style{
   
@@ -185,7 +195,7 @@
 }
 .upload_video_style_one-below-other{
   width: 25%;
-  padding-top: 34%;
+  padding-top:17%;
   
 }
 @media (min-width:320px) and (max-width:414px){
@@ -194,11 +204,17 @@
       margin: 1% 12%;
 
   }
+  .col-style{
+    padding:0px;
+  }
+  .ul-video-grid-one-below-other-style{
+    padding-left: 26px;
+  }
   .video-grid-one-below-other {
      
-      width: 75%;
-      height: 50.5vw;
-      margin: 0 auto;
+    width: 98%;
+    height: 42.5vw;
+    margin: 0 auto;
   }
 }
 @media (min-width:768px) and (max-width:1199px){

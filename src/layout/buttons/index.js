@@ -74,6 +74,44 @@ class Buttons extends React.Component{
                   <button type="button"  class="btn btn-link button-link-style">text Button</button>
                   </div>
                 </div>
+                <div className="row">
+                  <div className ="align-button " >
+                  <h2> sharp icon AND text </h2>
+                    <button class="btn btn-primary button-icon-text-sharpEdge-style"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className ="align-button " >
+                  <h2> circular icon AND text </h2>
+                    <button class="btn btn-primary button-icon-text-rounded-style"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className ="align-button " >
+                  <h2> soft edge</h2>
+                    <button class="btn btn-primary button-icon-text-softEdge-style"><i class="fa fa-facebook-f mr-2"></i> Sign in with Facebook</button>
+                  </div>
+                </div>
+
+
+                <div className="row">
+                  <div className ="align-button " >
+                  <h2> sharp icon AND text </h2>
+                    <button class="btn btn-primary button-icon-sharpEdge-style"><i class="fa fa-facebook-f mr-2"></i></button>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className ="align-button " >
+                  <h2> circular icon AND text </h2>
+                    <button class="btn btn-primary button-icon-rounded-style"><i class="fa fa-facebook-f mr-2"></i></button>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className ="align-button " >
+                  <h2> soft edge</h2>
+                    <button class="btn btn-primary button-icon-softEdge-style"><i class="fa fa-facebook-f mr-2"></i></button>
+                  </div>
+                </div>
                
                 
             </div>

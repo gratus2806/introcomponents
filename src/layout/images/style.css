@@ -218,7 +218,7 @@
       width: 360px;
     }
   }
-  .image-square-fullScreen {
+  /* .image-square-fullScreen {
   height: 320px;
   width: 320px;
   margin: 5% auto;
@@ -261,7 +261,7 @@
     height: 411px;
     width: 411px;
   }
-}
+} */
 .image-softCorner-small {
     height: 82px;
     width: 82px;
@@ -410,7 +410,7 @@
     object-fit: cover;
   }
   .image-rectangle-small {
-    height: 210px;
+    height: 160px;
     width: 320px;
     margin: 5% auto;
     box-shadow: 2px 5px 10px 0px #e1ddd5;

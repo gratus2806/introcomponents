@@ -115,14 +115,23 @@
   .card-video {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 75%;
+    width: 91%;
     margin:5% auto;
   }
+  .video-card-style{
+    width: 100%;
+    height: 222px;
+    object-fit: cover;
+  }
+  
   @media (min-width:1200px){
     .card-video {
-      
-      width: 31%;
-      
+      width: 53%;
+    }
+    .video-card-style{
+      width: 100%;
+      height: 439px;
+      object-fit: cover;
     }
   }
   
