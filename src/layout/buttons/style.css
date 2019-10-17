@@ -7,26 +7,37 @@
     text-align: center;
     margin: 0 auto;
   }
+  .button-shadow:focus, .button-shadow:hover ,.button-shadow:active {
+    color:#ffff;
+    text-decoration: none;
+    box-shadow: none;
+  }
+   
   .button-fill-sharp-style{
     width: 333px;
     height: 45px;
     font-size: 1.4em;
     border-radius: 2px;
     margin-bottom: 5%;
+    box-shadow: none;
   }
+  
   .button-fill-circle-style{
     width: 333px;
     height: 50px;
     font-size: 1.4em;
     border-radius: 50px;
     margin-bottom: 5%;
+    box-shadow: none;
   }
+  
   .button-fill-softEdge-style{
     width: 333px;
     height: 60px;
     font-size: 1.4em;
     border-radius: 15px;
     margin-bottom: 5%;
+    box-shadow: none;
   }
   
   
@@ -37,6 +48,7 @@
     font-size: 1.4em;
     border-radius: 2px;
     margin-bottom: 5%;
+    box-shadow: none;
   }
   .button-outlined-circle-style{
     width: 333px;
@@ -44,6 +56,7 @@
     font-size: 1.4em;
     border-radius: 50px;
     margin-bottom: 5%;
+    box-shadow: none;
   }
   .button-outlined-softEdge-style{
     width: 333px;
@@ -51,6 +64,7 @@
     font-size: 1.4em;
     border-radius: 10px;
     margin-bottom: 5%;
+    box-shadow: none;
   }
   
 
@@ -64,6 +78,7 @@
     border-radius: 2px;
     margin-bottom: 5%;
     color:#ffff;
+    box-shadow: none;
   }
   .button-gradient-circle-style{
     background: linear-gradient(40deg,#f31023,#7b1d92) !important;
@@ -73,6 +88,7 @@
     border-radius:50px;
     margin-bottom: 5%;
     color:#ffff;
+    box-shadow: none;
   }
   .button-gradient-softEdge-style{
     background: linear-gradient(40deg,#23f310,#e0ec30) !important;
@@ -82,6 +98,7 @@
     border-radius:10px;
     margin-bottom: 5%;
     color:#ffff;
+    box-shadow: none;
   }
   .btn:focus, .btn:hover {
     color:#ffff;
@@ -100,6 +117,7 @@
   border-radius:10px;
   margin-bottom: 5%;
   color:#ffff;
+  box-shadow: none;
 }
 
 
@@ -110,6 +128,7 @@
     font-size: 1.4em;
     border-radius: 2px;
     margin-bottom: 5%;
+    box-shadow: none;
 }
 .button-icon-text-rounded-style{
   width: 333px;
@@ -117,6 +136,7 @@
     font-size: 1.4em;
     border-radius: 50px;
     margin-bottom: 5%;
+    box-shadow: none;
 }
 .button-icon-text-softEdge-style{
   width: 333px;
@@ -124,26 +144,30 @@
   font-size: 1.4em;
   border-radius: 10px;
   margin-bottom: 5%;
+  box-shadow: none;
 } 
 
 .button-icon-sharpEdge-style{
-  width: 140px;
+  width: 333px;
     height: 45px;
     font-size: 1.4em;
     border-radius: 2px;
     margin-bottom: 5%;
+    box-shadow: none;
 }
 .button-icon-rounded-style{
-  width: 140px;
+  width: 333px;
     height: 50px;
     font-size: 1.4em;
     border-radius: 50px;
     margin-bottom: 5%;
+    box-shadow: none;
 }
 .button-icon-softEdge-style{
-  width: 140px;
+  width: 333px;
   height: 45px;
   font-size: 1.4em;
   border-radius: 10px;
   margin-bottom: 5%;
+  box-shadow: none;
 } 
