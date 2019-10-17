@@ -2,6 +2,10 @@
   width: 70%;
   margin: 0 auto;
 }
+#popup-overlay {
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
 .col-style{
   margin: 0 auto;
 }

@@ -96,6 +96,14 @@ render(){
                                 </a>
                             </div>
                         </li>
+                        <li>
+                            <div className='video-grid-circle' style={{position:"relative",display:coverDiv}} >
+                                <a className=" video-btn" onClick={this.put_bg_color} data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal" >
+                                    <i  className=" fa fa-play fa-2x " style={{color:"white",position:"absolute",left: "45%",top: "45%",zIndex:"999"}}></i>
+                                    <img className="video-grid-circle-style" src='https://res.cloudinary.com/fleetnation-static/image/asset/s--MifwX3dl--/f_auto/header-2018-2560w-c2f0f28235c4f87790c9d5181036c003'/>
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -219,7 +227,7 @@ render(){
             </div>
 
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog" id="popup-overlay" role="document">
                         <div class="modal-content modal-position" >
 
                             <div class="modal-body">
