@@ -18,7 +18,7 @@ class Comment_page extends React.Component{
                 // backgroundColor:"#FFF8F8", /*error*/
                 minHeight: `${window.innerHeight}px`,
             }}>
-                <div style={{display:" flex", alignItems: "center", justifyContent: "center", alignConten:"center",  minHeight: `${window.innerHeight-140}px`}}>
+                <div style={{display:" flex", alignItems: "center", justifyContent: "center", alignConten:"center",  minHeight: `${window.innerHeight}px`}}>
                     <div class="container" >
 
                         {/* <<<<<<<<<<<<<<<<,,,,behance login<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
@@ -49,46 +49,58 @@ class Comment_page extends React.Component{
                     
 
                         {/* <<<<<<<<<<<<<<<<<<<<<<<success>>>>>>>>>>>>>>>>>>>>>>>>> */}
-
                         {/* <div className="row">
-                            <div class="swal2-icon swal2-success swal2-animate-success-icon" style={{display: "flex"}}>
-                                <div class="swal2-success-circular-line-left" style={{backgroundColor: "#F5FDF6"}}></div>
-                                <span class="swal2-success-line-tip"></span>
-                                <span class="swal2-success-line-long"></span>
-                                <div class="swal2-success-ring"></div> 
-                                <div class="swal2-success-fix" style={{backgroundColor: "#F5FDF6"}}></div>
-                                <div class="swal2-success-circular-line-right" style={{backgroundColor:" #F5FDF6"}}></div>
+                            <div className="row">
+                                <div class="swal2-icon swal2-success swal2-animate-success-icon" style={{display: "flex"}}>
+                                    <div class="swal2-success-circular-line-left" style={{backgroundColor: "#F5FDF6"}}></div>
+                                    <span class="swal2-success-line-tip"></span>
+                                    <span class="swal2-success-line-long"></span>
+                                    <div class="swal2-success-ring"></div> 
+                                    <div class="swal2-success-fix" style={{backgroundColor: "#F5FDF6"}}></div>
+                                    <div class="swal2-success-circular-line-right" style={{backgroundColor:" #F5FDF6"}}></div>
+                                </div>
+
                             </div>
                             
-                            <h3 className="header-success-text">Success Message</h3>
-                        
-                        </div> 
-                        <div className="row footer-row"  >
-                            <div className="col-12 text-align"  >
-                                <img className="logo-footer-image-style" src='https://intro-assets.s3-us-west-2.amazonaws.com/images/template_images/intro_logo.png'/>
-                                <br/>
-                                <h3 className="header-footer-text">Your .com in your hands</h3>
+                                <h3 className="header-success-text" style={{margin: "0 auto"}} >Success Message</h3>
+                            
+                            <div className="row footer-row"  >
+                                <div className="col-12 text-align"  >
+                                    <img className="logo-footer-image-style" src='https://intro-assets.s3-us-west-2.amazonaws.com/images/template_images/intro_logo.png'/>
+                                    <br/>
+                                    <h3 className="header-footer-text">Your .com in your hands</h3>
+                                </div>
                             </div>
                         </div> */}
 
+                        
 
                         {/* <<<<<<<<<<<<<<<<<<<<<<failuar>>>>>>>>>>>>>>>></failuar> */}
+
+
                         {/* <div className="row">
-                            <div class="swal2-icon swal2-error swal2-animate-error-icon" style={{display: "flex"}}>
-                                <span class="swal2-x-mark">
-                                    <span class="swal2-x-mark-line-left"></span>
-                                    <span class="swal2-x-mark-line-right"></span>
-                                </span>
+                            <div className="row">
+                                <div class="swal2-icon swal2-error swal2-animate-error-icon" style={{display: "flex"}}>
+                                    <span class="swal2-x-mark">
+                                        <span class="swal2-x-mark-line-left"></span>
+                                        <span class="swal2-x-mark-line-right"></span>
+                                    </span>
+                                </div>
+
                             </div>
-                            <h3 className="header-error-text">Failure Message</h3>
-                        </div> 
-                        <div className="row footer-row"  >
-                            <div className="col-12 text-align"  >
-                                <img className="logo-footer-image-style" src='https://intro-assets.s3-us-west-2.amazonaws.com/images/template_images/intro_logo.png'/>
-                                <br/>
-                                <h3 className="header-footer-text">Your .com in your hands</h3>
+                            
+                                <h3 className="header-error-text" style={{margin: "0 auto"}} >Failure Message</h3>
+                            
+                            <div className="row footer-row"  >
+                                <div className="col-12 text-align"  >
+                                    <img className="logo-footer-image-style" src='https://intro-assets.s3-us-west-2.amazonaws.com/images/template_images/intro_logo.png'/>
+                                    <br/>
+                                    <h3 className="header-footer-text">Your .com in your hands</h3>
+                                </div>
                             </div>
                         </div> */}
+                        
+                        
 
                     </div>
                 </div> 

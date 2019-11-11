@@ -7,7 +7,7 @@ import AsyncComponent from './async-component';
 import { Route, Switch, Link, BrowserRouter as Router } from 'react-router-dom';
 // import Single_video from './components/video_gallery/single_video';
 
-const Layout_1    = AsyncComponent(() => {
+const MyOgComponent    = AsyncComponent(() => {
     return import('./layout/layout_1');
 });
 const Images    = AsyncComponent(() => {
@@ -35,24 +35,30 @@ const Login    = AsyncComponent(() => {
 const Comment_page    = AsyncComponent(() => {
     return import('./layout/comment_page');
 });
-// const Layout_8    = AsyncComponent(() => {
-//     return import('./layout/layout_8');
-// });
-// const Layout_9   = AsyncComponent(() => {
-//     return import('./layout/layout_9');
-// });
+const Vcard_1    = AsyncComponent(() => {
+    return import('./layout/vcard_1');
+});
+const Vcard_2    = AsyncComponent(() => {
+    return import('./layout/vcard_2');
+});
+const Vcard_3    = AsyncComponent(() => {
+    return import('./layout/vcard_3');
+});
+const Invitation   = AsyncComponent(() => {
+    return import('./layout/invitation');
+});
 // const Layout_10   = AsyncComponent(() => {
 //     return import('./layout/layout_10');
 // });
-// const Menu_1   = AsyncComponent(() => {
-//     return import('./components/menu_types/menu_1');
-// });
+const Menu_1   = AsyncComponent(() => {
+    return import('./layout/menu_1');
+});
 // const Menu_2   = AsyncComponent(() => {
 //     return import('./components/menu_types/menu_2');
 // });
-// const Menu_3   = AsyncComponent(() => {
-//     return import('./components/menu_types/menu_3');
-// });
+const Menu_3   = AsyncComponent(() => {
+    return import('./layout/menu_3');
+});
 // const Menu_4   = AsyncComponent(() => {
 //     return import('./components/menu_types/menu_4');
 // });
@@ -118,7 +124,7 @@ const Comment_page    = AsyncComponent(() => {
 ReactDOM.render(<Router >  
     <Switch>
         {/* <Route path="" component={Layout_5} /> */}
-        <Route path="/layout_1" component={Layout_1} />
+        <Route path="/layout_1" component={MyOgComponent} />
         <Route path="/images" component={Images} />
         <Route path="/image_galary" component={Image_galary} />
         <Route path="/videos" component={Videos} />
@@ -126,7 +132,14 @@ ReactDOM.render(<Router >
         <Route path="/buttons" component={Buttons} />
         <Route path="/video_modal" component={Video_modal} />
         <Route path="/login" component={Login} />
-        <Route path="/comment" component={Comment_page} />
+        <Route path="/behance" component={Comment_page} />
+        <Route path="/vcard_1" component={Vcard_1} />
+        <Route path="/vcard_2" component={Vcard_2} />
+        <Route path="/vcard_3" component={Vcard_3} />
+        <Route path="/invitation" component={Invitation} />
+        <Route path="/menu_3" component={Menu_3} />
+        <Route path="/menu_1" component={Menu_1} />
+        
         
     </Switch>
  </Router>, document.getElementById('root'));

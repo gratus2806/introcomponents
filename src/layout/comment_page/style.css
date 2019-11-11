@@ -114,21 +114,23 @@ input::-webkit-input-placeholder {
     margin:0 auto;
 }
 .footer-row{
-    
+    /* width: 100%; */
     margin: 0;
     position: absolute;
     
     bottom: 0px;
 }
 .header-success-text{
-    position: absolute;
-    left: 32%;
+    /* position: absolute;
+    left: 32%; */
+    font-size: 2.75rem;
     color:#00C107;
     font-family: 'Montserrat medium', sans-serif;
 }
 .header-error-text{
-    position: absolute;
-    left: 32%;
+    /* position: absolute;
+    left: 32%; */
+    font-size: 2.75rem;
     color:#FF0000;
     font-family: 'Montserrat medium', sans-serif;
 }
@@ -1259,7 +1261,8 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swa
 }
 .swal2-icon{
     position:relative;
-    bottom:80px;
+    bottom: 80px;
+    left: 49vw;
     justify-content:center;
     width:5em;
     height:5em;
@@ -1498,14 +1501,14 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swa
     transform-origin: 2.75em 1.75em;
 }
 @media (min-width:415px){
-    .header-success-text{
+    /* .header-success-text{
+        /* position: absolute;
+        left: 34%; */
+    
+    /* .header-error-text {
         position: absolute;
         left: 34%;
-    }
-    .header-error-text {
-        position: absolute;
-        left: 34%;
-    }
+    } */
     
 }
 @media (min-width:1200px){
@@ -1550,24 +1553,24 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swa
     .footer-row {
         position: absolute;
         bottom: 0px;
-        left: 36%;
+        left: 35%;
     }
     .header-success-text{
-        position: absolute;
-        left: 45%;
+       
         color:#00C107;
         font-family: 'Montserrat medium', sans-serif;
     }
     .header-error-text {
-        position: absolute;
+        /* position: absolute;
         left: 45%;
+        top: 40%; */
         color:#FF0000;
         font-family: 'Montserrat medium', sans-serif;
     }
     .swal2-icon {
         position: absolute;
-        left: 48%;
-        top: 25%;
+        left: 47%;
+        top: 36%;
     }
     
 

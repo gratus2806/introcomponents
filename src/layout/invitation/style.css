@@ -1,0 +1,114 @@
+.header-style{
+    color: #1a1a1a;
+    padding-top: 3%;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.subHeader-style{
+    font-size: 3.1em;
+    color: #757575;
+    font-weight: 400;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.time-public-row-style{
+    width: 100%;
+    padding-left: 1.8%;
+}
+.date-time-style{
+    padding: 0 2% 0 0;
+    color: #757575;
+    font-weight: 300;
+
+}
+.post-category-style{
+    padding: 0 2% 0 0;
+    color: #757575;
+    font-weight: 300;
+
+}
+.upload-icon-style{
+    padding: 0 2% 0 0;
+    color: #757575;
+    font-weight: 300;
+
+}
+.heart-icon-style{
+    color: #757575;
+    font-weight: 300;
+}
+.image-style{
+    width: 100%;
+    height: 69vh;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 3% 0 3% 0;
+}
+.advertisement-text-style{
+    font-size: 3.3em;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-family: 'Montserrat medium', sans-serif;
+    margin-bottom: 3%;
+}
+.button-fill-sharp-style{
+    width: 30%;
+    height: 8vh;
+    font-size: 2.1em;
+    border-radius: 4px;
+    margin-bottom: 3%;
+    box-shadow: none !important;
+    text-transform: none;
+  }
+  .divider-line-style{
+    margin: 3% 0;
+    height: 1px;
+    background: #dfebf6;
+    border: none;
+  }
+  .access-benifit-list-header{
+    font-size: 3.3em;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-family: 'Montserrat medium', sans-serif;
+    margin-bottom: 3%;
+  }
+  .li-access-benifit-style{
+    font-size: 1.9em;
+    color: #1a1a1a;
+    font-family: 'Montserrat ',Arial, Helvetica, sans-serif;
+  }
+  .Goal-list-header{
+    font-size: 3.3em;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-family: 'Montserrat medium', sans-serif;
+    margin-bottom: 3%;
+  }
+  .li-Goal-style{
+    list-style-type:none;
+    font-size: 1.9em;
+    color: #1a1a1a;
+    font-family: 'Montserrat ',Arial, Helvetica, sans-serif;
+  }
+  .top-post-header{
+    font-size: 3em;
+    color: #1a1a1a;
+    font-family: 'Montserrat medium', sans-serif;
+    margin-bottom: 3%;
+    font-weight: 400;
+  }
+  .top-post-text-style{
+    font-size: 2em;
+    font-family: 'Montserrat medium', sans-serif;
+    font-weight: 300;
+    margin: 3% 0 o 0;
+  }
+  .top-post-text-style:hover{
+    text-decoration: underline;
+  }
+@media (min-width:1200px){
+    .container{
+        width: 70%;
+    }
+}
